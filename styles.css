@@ -1,0 +1,451 @@
+body {
+  font-family: 'Hind Siliguri', sans-serif;
+  font-size: 18px;
+  color: #222;
+  line-height: 1.7;
+}
+
+h1, h2, h3, p, li {
+  font-family: 'Hind Siliguri', sans-serif;
+  font-weight: 700;
+}
+
+header {
+  max-width: 900px;
+  margin: 40px auto 60px;
+  padding: 0 20px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+header img {
+  max-width: 150px;
+  margin: 0 auto 15px;
+  display: block;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #002c6d; /* Bootstrap primary blue */
+}
+
+header p {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #000000;
+  line-height: 1.4;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav .nav-ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  font-weight: 600;
+}
+
+nav .nav-ul li a {
+  text-decoration: none;
+  color: #ffffff; /* Changed from #ffffff to ensure visibility */
+  font-size: 1rem;
+  padding: 8px 14px;
+  border-radius: 30px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav .nav-ul li a:hover,
+nav .nav-ul li a:focus {
+  background-color: #0d6efd;
+  color: rgb(255, 217, 0);
+  outline: none;
+  box-shadow: 0 3px 8px rgb(13 110 253 / 0.4);
+}
+
+/* Center navbar toggler on mobile and tablet */
+.navbar .centered-toggler {
+  margin: 0 auto;
+}
+
+/* Ensure navbar background for visibility */
+.navbar-light {
+  background-color: #f8f9fa; /* Bootstrap's bg-light */
+}
+
+/* Responsive tweak for smaller screens */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+  nav .nav-ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .navbar .navbar-collapse {
+    justify-content: center;
+  }
+  .navbar .nav-ul {
+    text-align: center;
+  }
+}
+
+#about {
+  max-width: 750px;
+  margin: 50px auto;
+  padding: 0 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.7;
+}
+
+#about h2 {
+  font-size: 2rem;
+  color: #0d6efd; /* Bootstrap primary blue */
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 25px;
+  letter-spacing: 1.2px;
+}
+
+#about p {
+  font-size: 1.125rem;
+  text-align: justify;
+  color: #444;
+  white-space: pre-line;
+  word-spacing: 0.1em;
+  font-weight: 500;
+  background-color: #f9f9f9;
+  padding: 18px 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.05);
+}
+
+#get-involved {
+  max-width: 600px;
+  margin: 50px auto 80px;
+  padding: 0 20px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+}
+
+#get-involved h2 {
+  font-size: 2rem;
+  color: #0d6efd;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+#get-involved button {
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  padding: 14px 40px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 40px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(13,110,253,0.4);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#get-involved button:hover {
+  background-color: #0a58ca;
+  transform: scale(1.05);
+}
+
+#get-involved button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(13,110,253,0.5);
+}
+
+h1 {
+  margin: 0;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+
+
+section {
+  padding: 40px;
+  background: white;
+  margin: 20px auto;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 991.98px) {
+  .navbar-toggler {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* Collapse container center alignment */
+  .navbar-collapse {
+    text-align: center;
+  }
+
+  /* Nav item এবং লিংক সেন্টার ও মিনিমাল লুক */
+  .navbar-nav {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 0.5rem;
+    
+   
+  }
+
+  .navbar-nav .nav-item {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .navbar-nav .nav-link {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    text-align: center;
+    color: #fff;
+    background-color: #0d6efd;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: 0.3s;
+  }
+
+  .navbar-nav .nav-link:hover {
+    background-color: #0b5ed7;
+    color: #fff;
+  }
+}
+
+#programs h2 {
+    font-size: 2rem;
+    color: #0d6efd; /* Bootstrap primary blue */
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 25px;
+    letter-spacing: 1.2px;
+  }
+.programs-container {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+  padding: 25px 30px;
+}
+
+.program-ul li.program-item {
+  padding: 12px 18px;
+  margin-bottom: 12px;
+  border-left: 4px solid #0d6efd;
+  background-color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  font-size: 1.1rem;
+  line-height: 1.4;
+  color: #444;
+  position: relative;
+}
+
+.program-ul li.program-item:hover,
+.program-ul li.program-item:focus {
+  text-decoration: none;
+  background-color: #0d6efd;
+  border-left-color: #053e92;
+  color: #fff;
+  box-shadow: 0 3px 8px rgb(13 110 253 / 0.3);
+  outline: none;
+}
+
+.popup-content {
+  display: none;
+  margin-top: 10px;
+  background: #eef5ff;
+  padding: 10px;
+  border-left: 3px solid #0d6efd;
+  border-radius: 5px;
+  color: #222;
+  font-size: 0.95rem;
+}
+
+
+button {
+  background: #ff9900;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #e68a00;
+}
+
+.nav-ul li {
+  padding: 15px;
+  margin: auto;
+  margin-left: 20px;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 10px;
+}
+
+.program-ul li {
+  list-style: none;
+  margin-left: 0%;
+}
+
+.program-ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+
+#contact {
+  max-width: 700px;
+  margin: 60px auto 80px;
+  padding: 0 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #0d6efd; /* subtle blue */
+  letter-spacing: 1.1px;
+}
+
+#contact h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #444;
+  font-weight: 600;
+  padding: 10px 16px;
+  border: 1.8px solid transparent;
+  border-radius: 28px;
+  transition: color 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+  font-size: 1.1rem;
+  min-width: 140px;
+  justify-content: center;
+}
+
+.social-icons a i {
+  font-size: 1.3rem;
+  color: #0d6efd;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #0d6efd;
+  border-color: #0d6efd;
+  background-color: #e6f0ff;
+}
+
+.social-icons a:hover i {
+  color: #0a58ca;
+}
+
+@media (max-width: 480px) {
+  .social-icons {
+    gap: 15px;
+  }
+  .social-icons a {
+    min-width: 100%;
+  }
+}
+
+.under-dev-section {
+  font-family: 'Hind Siliguri', sans-serif;
+  background-color: #f4f6f9;
+  padding: 60px 20px;
+  text-align: center;
+  border-top: 4px solid #0d6efd;
+}
+
+.under-dev-section .dev-icon {
+  font-size: 60px;
+  color: #0d6efd;
+  margin-bottom: 20px;
+}
+
+.under-dev-section .dev-heading {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.under-dev-section .dev-description {
+  font-size: 18px;
+  margin-bottom: 25px;
+  color: #555;
+}
+
+.under-dev-section .dev-info {
+  margin-bottom: 20px;
+  font-size: 17px;
+  color: #444;
+}
+
+.under-dev-section .info-icon {
+  color: #0d6efd;
+  margin-right: 6px;
+}
+
+.under-dev-section .dev-contact {
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+.under-dev-section .copy-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #0d6efd;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.under-dev-section .copy-button:hover {
+  background-color: #084298;
+}
